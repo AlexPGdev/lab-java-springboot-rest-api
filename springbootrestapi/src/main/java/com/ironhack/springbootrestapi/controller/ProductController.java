@@ -18,7 +18,7 @@ public class ProductController {
         this.productService = productService;
     }
 
-    String key = "12345";
+    String key = "123456";
 
     private void validateAPIKey(String apiKey) {
         if(apiKey == null || apiKey.trim().isEmpty()) {

@@ -71,7 +71,7 @@ public class ProductService {
         }
 
         if(productsByPriceRange.isEmpty()) {
-            throw new IllegalArgumentException("No products found");
+            throw new ProductNotFound("No products found in this price range");
         }
 
         return productsByPriceRange;
